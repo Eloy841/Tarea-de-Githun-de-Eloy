@@ -53,7 +53,7 @@ def registrar_usuario():
         # Simulating successful registration with flash messages
         flash(f"Usuario {form.nombre.data} registrado correctamente.", "success")
         return redirect('/')
-    return render_template('registros.html', form=form)
+    return render_template('registro.html', form=form)
 
 @app.errorhandler(404)
 def page_not_found(e):
